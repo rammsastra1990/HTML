@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Css Displays Demo</title>
+    <style>
+      .slider-group {
+      }
+      .pBlock {
+        background-color: red;
+        display: block;
+        height: 100px;
+        width: 100px;
+      }
+      .pInline {
+        background-color: blue;
+        display: inline;
+        height: 100px;
+        width: 100px;
+      }
+      .pInlineBlock {
+        background-color: green;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+      }
+      .input-box-text {
+        height: 50px;
+        width: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <p
+      style="width=400px;color:red;background-color:blue;height:100px;display:block;text-align:center"
+    >
+      CSS Displays Demo
+    </p>
+    <div>
+      <label class="block-width-label" for="block_width_display"
+        >Block Width:</label
+      >
+      <input
+        type="text"
+        id="block_width_display"
+        name="block_width_display"
+        value="200"
+      />
+      <div><p id="block-001" class="pBlock">Block Display</p></div>
+      <hr />
+    </div>
+    <div>
+      <label class="inline-width-label" for="inline_width_display"
+        >Inline Width:</label
+      >
+      <input
+        type="text"
+        id="inline_width_display"
+        name="inline_width_display"
+        value="200"
+      />
+      <div><p id="inline-001" class="pInline">Inline Display</p></div>
+      <hr />
+    </div>
+    <div>
+      <div>
+        <label class="block-inline-width-label" for="block-inline-width-display"
+          >Block Inline Width:</label
+        >
+        <input
+          type="text"
+          id="block-inline-width-display"
+          name="block-inline-width-display"
+          value="200"
+        />
+        <p id="inline-block-001" class="pInlineBlock">Inline block Display</p>
+        <hr />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
